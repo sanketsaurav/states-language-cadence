@@ -1,0 +1,17 @@
+version = 1
+
+test_patterns = [
+  '**/*_test.go',
+]
+
+[[ analyzers ]]
+  name = 'go'
+  enabled = true
+  
+  [analyzers.meta]
+    import_path = "github.com/sanketsaurav/states-language-cadence"
+
+[[ analyzers ]]
+  name = 'docker'
+  enabled = true
+    
